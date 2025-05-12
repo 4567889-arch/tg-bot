@@ -62,10 +62,75 @@
 
 Полный список зависимостей:
 ```
-aiofiles==24.1.0
-aiogram==3.18.0
-textblob==0.17.1
-yake==0.4.8
+aiofiles           24.1.0
+aiogram            3.20.0.post0
+aiohappyeyeballs   2.6.1
+aiohttp            3.11.18
+aiosignal          1.3.2
+annotated-types    0.7.0
+anyio              4.9.0
+async-timeout      5.0.1
+attrs              25.3.0
+certifi            2025.1.31
+charset-normalizer 3.4.1
+click              8.1.8
+deeppavlov         1.7.0
+distro             1.9.0
+dotenv             0.9.9
+exceptiongroup     1.2.2
+fastapi            0.89.1
+filelock           3.9.1
+frozenlist         1.6.0
+fsspec             2025.3.2
+h11                0.16.0
+httpcore           1.0.9
+httpx              0.28.1
+huggingface-hub    0.30.2
+idna               3.10
+jellyfish          1.2.0
+jiter              0.9.0
+joblib             1.4.2
+magic-filter       1.0.12
+multidict          6.4.3
+networkx           3.2.1
+nltk               3.9.1
+numpy              1.23.5
+openai             1.76.1
+packaging          25.0
+pandas             1.5.3
+pip                25.1
+prometheus_client  0.21.1
+propcache          0.3.1
+pybind11           2.10.3
+pydantic           2.11.3
+pydantic_core      2.33.1
+python-dateutil    2.9.0.post0
+python-dotenv      1.1.0
+pytz               2025.2
+PyYAML             6.0.2
+regex              2024.11.6
+requests           2.32.3
+safetensors        0.5.3
+scikit-learn       1.0.2
+scipy              1.10.0
+segtok             1.5.11
+setuptools         58.0.4
+six                1.17.0
+sniffio            1.3.1
+starlette          0.22.0
+tabulate           0.9.0
+textblob           0.19.0
+threadpoolctl      3.6.0
+tokenizers         0.21.1
+tqdm               4.64.1
+transformers       4.51.3
+typing_extensions  4.13.2
+typing-inspection  0.4.0
+urllib3            2.4.0
+uvicorn            0.18.3
+wheel              0.45.1
+yake               0.4.8
+yarl               1.20.0
 ```
 
 # Примечания
