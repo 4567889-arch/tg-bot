@@ -1,5 +1,7 @@
 # Импорт необходимых библиотек
 import asyncio
+import os
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.types import Message, CallbackQuery, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import CommandStart, Command
@@ -7,6 +9,9 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from textblob import TextBlob
 import yake
+
+# Загрузка переменных окружения из .env файла
+load_dotenv()
 
 # Инициализация роутера
 router = Router()
@@ -208,7 +213,12 @@ async def echo(message: Message):
 
 # Основной запуск бота
 async def main():
-    bot = Bot(token='7162202718:AAFPn70StVWrVxLj-Jjyn8E1LhBKVKEBHQA') 
+    # Получение токена бота из переменных окружения
+    BOT_TOKEN = os.getenv('BOT_TOKEN')
+    if not BOT_TOKEN:
+        raise ValueError("Не указан токен бота в .env файле")
+    
+    bot = Bot(token=BOT_TOKEN) 
     dp = Dispatcher()
     dp.include_router(router)
     await dp.start_polling(bot)
