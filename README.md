@@ -50,7 +50,9 @@
    ```bash
    pip install aiogram textblob yake
 
-3. Запустить бота
+3. Создать `.env` файл с токеном бота
+
+4. Запустить бота
    ```bash
    python3 tgbot.py
 
